@@ -1,0 +1,28 @@
+.card-medium {
+  padding-bottom: 8px;
+
+  &__additional {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__theme {
+    margin-right: 15px;
+    font-size: 10px;
+    padding: 8px 10px;
+    background: #000;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}

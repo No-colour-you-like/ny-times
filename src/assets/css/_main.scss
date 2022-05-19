@@ -1,0 +1,36 @@
+.main {
+  &__small-title {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+
+  &__content {
+    display: flex;
+
+    .large-block {
+      width: 35%;
+      border-right: 1px dashed $gray-light;
+      padding-right: 50px;
+    }
+
+    .medium-block {
+      width: 35%;
+      padding: 0 50px;
+      border-right: 1px dashed $gray-light;
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+
+        .card-medium:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .small-block {
+      width: 30%;
+      padding-left: 50px;
+    }
+  }
+}
