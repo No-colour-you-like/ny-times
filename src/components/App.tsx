@@ -1,35 +1,29 @@
+import React from "react";
+import { useState } from "react";
+
 import Header from "./Header";
 import Navigation from "./Navigation";
-import CardLarge from "./CardLarge";
-import CardMedium from "./CardMedium";
-import CardSmall from "./CardSmall";
 
-const App = () => {
+import Content from "./Content";
+import Filter from "./Filter";
+
+const App: React.FC<{}> = () => {
+  const [contentTransform, setContentTransform] = useState(false);
+
+  const handleFilterTransform = (value: boolean) => {
+    setContentTransform(value);
+  };
+
   return (
     <div className="app">
       <div className="dashboard">
-        <div className="container">
-          <Header />
-          <Navigation />
-          <main>
-            <h1 className="main__title">Business</h1>
-            <div className="main__content">
-              <div className="large-block">
-                <CardLarge />
-              </div>
-              <div className="medium-block">
-                <h3 className="main__small-title">Latest News</h3>
-                <div className="medium-block__content">
-                  <CardMedium />
-                  <CardMedium />
-                </div>
-              </div>
-              <div className="small-block">
-                <h3 className="main__small-title">Fast Forward</h3>
-                <CardSmall />
-              </div>
-            </div>
-          </main>
+        <Filter handleFilterTransform={handleFilterTransform} />
+        <div className={`dashboard__content ${contentTransform ? "dashboard__transform" : ""}`}>
+          <div className="container">
+            <Header />
+            <Navigation />
+            <Content />
+          </div>
         </div>
       </div>
     </div>

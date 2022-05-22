@@ -8,7 +8,20 @@
 }
 
 .dashboard {
-  width: 95%;
-  height: 700px;
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  height: 800px;
   background: #f7f3f5;
+  overflow-x: hidden;
+
+  &__content {
+    width: calc(100% - 65px);
+    transition: 0.5s;
+  }
+
+  &__transform {
+    transform: translateX(300px);
+    transition: 0.5s;
+  }
 }

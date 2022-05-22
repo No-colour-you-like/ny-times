@@ -1,0 +1,49 @@
+{
+  "navigation": [
+    {
+      "id": 1,
+      "name": "world",
+      "title": "World"
+    },
+    {
+      "id": 2,
+      "name": "politics",
+      "title": "Politics"
+    },
+    {
+      "id": 3,
+      "name": "technology",
+      "title": "Technology"
+    },
+    {
+      "id": 4,
+      "name": "sports",
+      "title": "Sports"
+    },
+    {
+      "id": 5,
+      "name": "science",
+      "title": "Science"
+    },
+    {
+      "id": 6,
+      "name": "health",
+      "title": "Health"
+    },
+    {
+      "id": 7,
+      "name": "movies",
+      "title": "Movies"
+    },
+    {
+      "id": 8,
+      "name": "business",
+      "title": "Business"
+    },
+    {
+      "id": 9,
+      "name": "arts",
+      "title": "Arts"
+    }
+  ]
+}
